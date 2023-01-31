@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div{
+            background-color: coral;
+            border: 5px solid black;
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            margin: 20px;
+            /* display : inline 은 */
+            /* width, height, padding, margin 을 */
+            /* 예상하기 힘들다 그래서 */
+            /* width, height, padding, margin 을 */
+            /* 개발자가 원하는대로 */
+            /* 그리고 같은 줄에 배치하고 싶을 때 */
+            /* display : inline-block */
+            display: inline-block;
+        }
+        /* 짝수마다 적용 */
+        div:nth-child(even){
+            border: 5px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">Lorem.</div>
+    <div id="box2">Lorem.</div>
+    <div id="box3">Lorem.</div>
+    <div id="box4">Lorem.</div>
+    <div id="box5">Lorem.</div>
+
+</body>
+</html>
