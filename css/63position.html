@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1{
+            background-color: yellow;
+        }
+        h1:nth-child(odd){
+            background-color: skyblue;
+        }
+        #head1{
+            /* stasic : 기본값, 위치를 변경할 수 없음 */
+            /* 포지션된 요소가 아니다. */
+            position: static;
+            left: 50px;
+        }
+        #head2{
+            /* relative : 원래 위치 기준으로 포지션 가능 */
+            position: relative;
+            left: 50px;
+        }
+        #head3{
+            position: relative;
+            bottom: 30px;
+        }
+        #head4{
+            position: relative;
+            right: 10px;
+        }
+        #head5{
+            position: relative;
+            bottom: 20px;
+        }
+        #head6{
+            position: relative;
+            top: 50px;
+            left: 50px;
+        }
+        #head7:hover{
+            position: relative;
+            bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1#head$*10>lorem2 -->
+    <h1 id="head1">
+        Lorem, ipsum.
+    </h1>
+    <h1 id="head2">
+        Debitis, magni!
+    </h1>
+    <h1 id="head3">
+        Dolorem, beatae.
+    </h1>
+    <h1 id="head4">
+        Quibusdam, nemo.
+    </h1>
+    <h1 id="head5">
+        Quis, ipsum?
+    </h1>
+    <h1 id="head6">
+        Vitae, quam?
+    </h1>
+    <h1 id="head7">
+        Doloremque, molestiae.
+    </h1>
+    <h1 id="head8">
+        Tempora, delectus!
+    </h1>
+    <h1 id="head9">
+        Quis, vitae.
+    </h1>
+    <h1 id="head10">
+        Debitis, ullam.
+    </h1>
+</body>
+</html>
