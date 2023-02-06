@@ -12,41 +12,44 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let a = 3;
-    console.log(a);
+    //비교 연산자의 피연산자가 string(문자열)
 
-    a = 5;
-    console.log(a);
+    //문자의 코드를 비교(사전순과 유사)
 
-    a = 0.222;
-    console.log(a);
+    let a= "java";
+    let b= "js";
 
-    //-(2^53 -1) ~ (2^53 -1)
-    a = 9007199254740992; //최대표현 가능 정수
-    console.log(a);
+    console.log(a === b); //false
+    console.log(a !== b);//true
+    console.log(a === "java");//true
+    console.log(a === "JAVA");//false
 
-    let b = a+1;
-    let c = a+2;
+    //
+    let c = "c";
+    let  d = "d";
+    console.log(c < d); //true
+    console.log(c>d);//false
+        //사전순 이기때문에
+    console.log(c < "can"); //true
+    console.log(c < "C"); //false(unicode 비교)
+    console.log("갳"<"걺");//true
 
-    console.log(b);
-    console.log(c);
+    //다른 타입과 비교(두 항을 unmber로 변환 후 비교)
+    console.log("3" < 4);//true
+    console.log("5" < 4);//false
+    console.log("11" < "2");//true
+    console.log("11" < 2);//false
 
-    //Infinity
-    let d = 1 / 2;
-    console.log(d);
+    let e = "11";
+    let f = 2;
 
-    let e = 1/ 0; //infinity
-    console.log(e);
-    let f = -1 / 0;
-    console.log(f);
+    //비교하기 전 타입 변환
+    let g = +e;// "11" --> 11
+    console.log(g < f);//number끼리 비교
 
-    //NaN (Not A Number)
-    let g = 15%2; // 1
-    console.log(g);
+    let h = "" + f; //2 --> "2"
+    console.log(e < h);//string끼리 비교
 
-    let h = 15%0; //NaN
-    console.log(h);
-    
     </script>
 </body>
 </html>

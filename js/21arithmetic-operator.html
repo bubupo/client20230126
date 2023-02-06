@@ -12,40 +12,43 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    //++ --
+    //단항 연산자(unary)
+
+    // ++ 변수가 가진 값 +1 연산결과
+    //-- 변수가가진 값 -1
+
     let a = 3;
-    console.log(a);
+    a++;
+    console.log(a); //4
 
-    a = 5;
-    console.log(a);
+    //피연산자의 우치에 따라 연산 결과가 다름
+    let b = 3;
+    let c= b++;
+    console.log("b" , b);//4
+    console.log("c", c); //c는 b라고 먼저 적용 된 다음 ++ 3
 
-    a = 0.222;
-    console.log(a);
+    let d = 3;
+    let e = ++d;
+    console.log("d", d);//4
+    console.log("e", e);//4
 
-    //-(2^53 -1) ~ (2^53 -1)
-    a = 9007199254740992; //최대표현 가능 정수
-    console.log(a);
+    // -- (decrement)감소연산자
+    //피연산자 변수가 가진 값 -1 을 해당 변수에 다시 할당
+    //연잔결과는 피연산자의 위치에 따라 다름
 
-    let b = a+1;
-    let c = a+2;
+    let f = 5;
+    f--;
+    console.log(f);//4
+    --f;
+    console.log(f); //3
 
-    console.log(b);
-    console.log(c);
+    let g = f--;
+    console.log("g",g); //3
 
-    //Infinity
-    let d = 1 / 2;
-    console.log(d);
+    let h= --f;
+    console.log("h",h); 
 
-    let e = 1/ 0; //infinity
-    console.log(e);
-    let f = -1 / 0;
-    console.log(f);
-
-    //NaN (Not A Number)
-    let g = 15%2; // 1
-    console.log(g);
-
-    let h = 15%0; //NaN
-    console.log(h);
     
     </script>
 </body>

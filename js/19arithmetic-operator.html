@@ -12,40 +12,52 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    //피연산자에 따라 다른 겨로가가 나올 수 있음
     let a = 3;
-    console.log(a);
-
-    a = 5;
-    console.log(a);
-
-    a = 0.222;
-    console.log(a);
-
-    //-(2^53 -1) ~ (2^53 -1)
-    a = 9007199254740992; //최대표현 가능 정수
-    console.log(a);
-
-    let b = a+1;
-    let c = a+2;
-
-    console.log(b);
+    let b = 5;
+    let c = 3 * 5; //15
     console.log(c);
 
-    //Infinity
-    let d = 1 / 2;
-    console.log(d);
-
-    let e = 1/ 0; //infinity
-    console.log(e);
-    let f = -1 / 0;
+    let d = "3";
+    let e = "5";
+    let f = d * e;
     console.log(f);
 
-    //NaN (Not A Number)
-    let g = 15%2; // 1
+    let g = d / e;
     console.log(g);
 
-    let h = 15%0; //NaN
+    let h = d - e;
     console.log(h);
+
+    // + 의 피연산자중 하나가 문자열(string)이면
+    //연결연산자가 됨
+    let i = d + e;
+    console.log(i);
+
+    let j = "3" + "5" ;//35
+    let k = "3" + 5;//35
+    let l = 3 + 5; //8
+
+    let n = 3 + 5+ "2";
+    console.log(n); //82
+
+    let o = "3" + 5+2;
+    console.log(o);//352
+
+    let p = 3+"5"+2;
+    console.log(p);
+
+    //괄호를 사용하여 연산식을 잘 읽을 수 있도록 하자
+    //괄호가 우선순위가 제일 높다
+    let m = 3 + 5* 2;
+    console.log(m);
+
+    let q = 3+ (5*2);//괄호를 사용하면 코드를 쉽게 읽을수 있음
+    console.log(q);
+
+    let r = (3 + 2) * 2; //괄호 안에 식이 먼저 계산됨
+    console.log(r);
+
     
     </script>
 </body>

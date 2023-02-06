@@ -12,41 +12,21 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
+    // 피연산가 하나인 산술연산자 (unary)
+    // + - ++ --
     let a = 3;
-    console.log(a);
-
-    a = 5;
-    console.log(a);
-
-    a = 0.222;
-    console.log(a);
-
-    //-(2^53 -1) ~ (2^53 -1)
-    a = 9007199254740992; //최대표현 가능 정수
-    console.log(a);
-
-    let b = a+1;
-    let c = a+2;
-
+    let  b = +a; // a의 부호를 바꾸지 않은 결과
     console.log(b);
+
+    let c = -a ; // a의 부호를 바꾼 값이 결과
     console.log(c);
 
-    //Infinity
-    let d = 1 / 2;
-    console.log(d);
-
-    let e = 1/ 0; //infinity
+    let d = "3"; //연결 연산자
+    let e= 3 + d; //33
     console.log(e);
-    let f = -1 / 0;
-    console.log(f);
-
-    //NaN (Not A Number)
-    let g = 15%2; // 1
-    console.log(g);
-
-    let h = 15%0; //NaN
-    console.log(h);
     
+    let f= 3 + (-d);//6  스트링 을 연산자로 바꿀때 사용함()
+    console.log(f);
     </script>
 </body>
 </html>
