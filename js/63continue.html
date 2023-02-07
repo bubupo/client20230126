@@ -9,20 +9,20 @@
     </style>
 </head>
 <body>
-   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let age = prompt("나이를 입력하세요." ,);
-    age = +age; //number로 변환
-    console.log(age);
-
-    if(age >= 20){
+    let num= +prompt("1~100 중 제외할 배수를 입력하세요", 1);
+    let a = 1;
+    for(let i = 1; i <=100; i++){
         
-        console.log("어른입니다.");
-    }
+        if((i%num) ===0){
+            continue;
+        }
 
-    console.log("마지막 명령문");
+        
+        console.log(i);
+    }
     </script>
 </body>
 </html>

@@ -9,20 +9,27 @@
     </style>
 </head>
 <body>
-   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let age = prompt("나이를 입력하세요." ,);
-    age = +age; //number로 변환
-    console.log(age);
-
-    if(age >= 20){
+    let a= 0; //초기화
+    while (a < 5) {//조건
+        console.log("a",a);
+        a++; //조건 변경 코드
         
-        console.log("어른입니다.");
     }
 
-    console.log("마지막 명령문");
+    //for 반복문
+    //(초기화코드; 조건; 변경코드)
+    for (let b = 1; b <= 5; b++) {
+        console.log("b",b);
+        
+    }
+    //변수 c 사용해서 5~1까지 출력되도록 코드를 작성
+    for (c = 5; c > 0; c--) {
+       console.log("c",c);
+        
+    }
     </script>
 </body>
 </html>

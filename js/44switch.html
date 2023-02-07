@@ -9,20 +9,39 @@
     </style>
 </head>
 <body>
-   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let age = prompt("나이를 입력하세요." ,);
-    age = +age; //number로 변환
-    console.log(age);
+    let grade = prompt("학점을 입력하세요", "A");
 
-    if(age >= 20){
-        
-        console.log("어른입니다.");
+    if (grade ==="A" || grade === "a") {
+        console.log("90점 이상입니다.");
+    }else if(grade ==="b" || grade === "B"){
+        console.log("80점 이상입니다.");
+    }else if (grade ==="c" || grade === "C"){
+        console.log("70점 이상입니다.");
+    }else {
+        console.log("다시 입력해주세요.");
     }
+// switch (grade) {
+//     case "a":
+//     case "A":
+//         console.log("90점 이상입니다.");
+//         break;
+//     case "b":
+//     case "B":
+//         console.log("80점 이상입니다.");
+//         break;
+//     case "c":
+//     case "C":
+//         console.log("70점 이상입니다.");
+//         break;
+//     //마지막 break는 생략 가능
 
-    console.log("마지막 명령문");
+//     default:
+//         console.log("다시 입력해주세요");
+//         break;
+// }
     </script>
 </body>
 </html>

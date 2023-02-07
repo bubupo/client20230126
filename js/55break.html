@@ -9,20 +9,24 @@
     </style>
 </head>
 <body>
-   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let age = prompt("나이를 입력하세요." ,);
-    age = +age; //number로 변환
-    console.log(age);
+    while (true) {
 
-    if(age >= 20){
-        
-        console.log("어른입니다.");
+        console.log("반복되는 코드");
+        break;
     }
 
-    console.log("마지막 명령문");
+    let dice;
+    while (true) {
+        dice = parseInt(Math.random()*6)+1;
+        console.log(dice);
+
+        if (dice === 5) {
+            break;
+        }
+    }
     </script>
 </body>
 </html>

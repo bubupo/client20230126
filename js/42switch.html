@@ -9,20 +9,34 @@
     </style>
 </head>
 <body>
-   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let age = prompt("나이를 입력하세요." ,);
-    age = +age; //number로 변환
-    console.log(age);
+    //conditional, branch : if switch
+    //조건문 분기문
 
-    if(age >= 20){
-        
-        console.log("어른입니다.");
+    //switch, switch-case
+    //값에 따라 실행 흐름이 바뀜
+    //if로 구현할 수 있음
+
+   //key 와value가 일치하는 곳부터 break;를 만나는 곳까지 실행
+   let key = 7; 
+   switch (key) {
+        case 3:
+            console.log("3일시 여기가 실행");
+            break;
+        case 7:
+            console.log("7일시 여기가 실행");
+            break;
+    
+        default:
+
+            break;
     }
 
-    console.log("마지막 명령문");
+    console.log("다음 실행흐름");
+
+
     </script>
 </body>
 </html>
