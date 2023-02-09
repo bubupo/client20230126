@@ -9,10 +9,31 @@
     </style>
 </head>
 <body>
-
+    <!-- h1#head$*3>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2" class="note">
+        Enim.
+    </h1>
+    <h1 id="head3" class="note">
+        Tempore.
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+    let elem1 = document.querySelector("#head1");
+    console.log(elem1.textContent);
+
+    let elem2 = document.querySelector("#head2");
+        console.log(elem2.textContent);
+    
+    let elem3 = document.querySelector(".note");
+    console.log(elem2.textContent);
+
+    let elem4 = document.querySelector("h1");
+    console.log(elem4.id);
+
+
     </script>
 </body>
 </html>

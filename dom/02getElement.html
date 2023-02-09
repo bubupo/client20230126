@@ -9,10 +9,28 @@
     </style>
 </head>
 <body>
-
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Debitis.
+    </h1>
+    <h1 id="head3">
+        Dolor.
+    </h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+    let o1 = document.getElementById("head1");
+    console.log(o1.textContent);
+    o1.textContent = "HELLO DOM";
+    o1.remove();
+
+    let o2 = document.getElementById("head2");
+    o2.textContent = "JAVASCRIPT";
+
+    //아이디가 HEAD3 요소의 텍스트 콘텐트를 바꾸기
+
+    let o3 = document.getElementById("head3").textContent = "JSQUERY";
     </script>
 </body>
 </html>

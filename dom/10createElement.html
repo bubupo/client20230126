@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,11 +9,32 @@
     <style>
     </style>
 </head>
-<body>
 
+<body>
+    <ul id="list1">
+        <li>
+            Lorem.
+        </li>
+        <li>
+            Eligendi!
+        </li>
+    </ul>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+        let text = "";
+        do {
+            text = prompt("새 목록을 작성하세요.", "stuby");
+            let li = document.createElement("li");
+            li.textContent = text;
+
+            document.querySelector("#list1").textContent = text(li);
+
+        } while (text !== "exit");
+
+
+
+
     </script>
 </body>
+
 </html>

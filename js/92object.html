@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,11 +9,29 @@
     <style>
     </style>
 </head>
+
 <body>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+        function introduce() {
+            console.log("이름은"+this.name+"이고 나이는"+this.age+"입니다");
+        }
+        let person1 = {
+            name: "son",
+            age: 22,
+            describe:introduce
+        }
+        let person2 = {
+            name: "cha",
+            age: 55,
+            describe:introduce
+        }
+
+        person1.describe();
+        
+        person2.describe();
     </script>
 </body>
+
 </html>

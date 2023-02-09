@@ -9,10 +9,25 @@
     </style>
 </head>
 <body>
+    <!-- h1#head1 -->
+    <h1 id="head1"></h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+        let elem = document.querySelector("#head1")
+
+        elem.append("hello");
+        elem.append("world");
+        elem.append("!");
+
+        elem.append("it","is","a","dom");
+        elem.append("<span>hi</span>");
+
+        let spanElem = document.createElement("p");
+        spanElem.textContent ="새로운 스팬 요소";
+
+        elem.append(spanElem);
+    
     </script>
 </body>
 </html>

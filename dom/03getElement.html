@@ -9,10 +9,31 @@
     </style>
 </head>
 <body>
+    <!-- h1#head$*3>lorem1 -->
+    <h1 id="head1">
+        Lorem.
+    </h1>
+    <h1 id="head2">
+        Nihil.
+    </h1>
+    <h1 id="head3">
+        Magnam?
+    </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+        let heads = document.getElementsByTagName("h1");
+        console.log(heads[0].textContent);
+        console.log(heads[1].textContent);
+        console.log(heads[2].textContent);
+
+        for (let i = 0; i < heads.length; i++) {
+            console.log(heads[i].textContent);
+        }
+
+        heads[1].textContent = "HI JAVASCRIPT";
+        heads[2].remove();
+    
     </script>
 </body>
 </html>

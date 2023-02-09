@@ -9,10 +9,32 @@
     </style>
 </head>
 <body>
+    <h1 id = "head1" class="note" onclick="console.log(999);">
+        L1
+    </h1>
+
+    <h1 onclick="console.log('hello event');">
+        L2
+    </h1>
+
+    <h1 onclick="console.log('점심시간');console.log('밥먹자');">
+        L3
+    </h1>
+
+    <h1 onclick="myfunc();">
+        L4
+    </h1>
+
+    <h1 ondblclick="console.log('더블클릭됨');">
+        L5
+    </h1>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+    function myfunc(){
+        console.log("함수실행됨!");
+        console.log("여러 명령문을 작성해도 됨.");
+    }
     </script>
 </body>
 </html>

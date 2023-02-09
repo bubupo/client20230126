@@ -9,10 +9,26 @@
     </style>
 </head>
 <body>
+    <h1>
+        Lorem.
+    </h1>
+    <h1>
+        Cum.
+    </h1>
+    <div id="res"></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+    let heads = document.querySelectorAll("h1");
+    let text = "";
+
+    for(let i = 0; i<heads.length; i++){
+        text +=heads[i].textContent;
+    }
+
+    document.getElementById("res").textContent = text;
+
+
     </script>
 </body>
 </html>

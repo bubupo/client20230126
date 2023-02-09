@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,11 +9,31 @@
     <style>
     </style>
 </head>
-<body>
 
+<body>
+    <!-- button[onclick]{클릭} -->
+    <div onmousedown="whichButton(event);">클릭</div>
+    <div id="res"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    //
+        function whichButton(param) {
+            // console.log(param);
+            let message = "";
+            switch (param.button) {
+                case 0:
+                    message = "왼쪽 버튼 클릭됨";
+                    break;
+                case 2:
+                    message = "오른쪽 버튼 클릭됨";
+                    break;
+                default:
+                    message = "다른 버튼 클릭됨"
+                    break;
+            }
+
+            document.querySelector("#res").textContent = message;
+        }
     </script>
 </body>
+
 </html>
