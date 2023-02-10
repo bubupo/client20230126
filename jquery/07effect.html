@@ -9,34 +9,22 @@
     </style>
 </head>
 <body>
-    <!-- h1#head$*4.note>lorem1 -->
-    <h1 id="head1" class="note">
+    <h1>
         Lorem.
     </h1>
-    <h1 id="head2" class="note error">
-        Expedita!
+    <h1>
+        Adipisci!
     </h1>
-    <h1 id="head3" class="note error">
-        Consequatur!
+    <h1>
+        Error.
     </h1>
-    <h1 id="head4" class="note">
-        Placeat?
-    </h1>
+    <button onclick="toggleHeads();">숨기기/보이기</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-    let elems1 = document.getElementsByClassName("note");
-
-    for(let i = 0; i< elems1.length; i++){
-        console.log(elems1[i].textContent);
-    }       
-
-    let elems2 = document.getElementsByClassName("note error");
-    for (let i = 0; i < elems2.length; i++){
-        console.log(elems2[i].textContent);
+    function toggleHeads(){
+        $("h1").toggle(2000);
     }
-
-    elems2[1].textContent = "Hello react";
-    
     </script>
 </body>
 </html>
